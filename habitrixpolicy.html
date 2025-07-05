@@ -74,6 +74,13 @@
       font-size: 1.5rem;
     }
     
+    h3 {
+      color: var(--secondary-color);
+      margin-top: 20px;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
+    
     p {
       margin-bottom: 15px;
     }
@@ -102,6 +109,14 @@
       background-color: var(--accent-color);
       padding: 15px;
       border-left: 4px solid var(--primary-color);
+      margin: 20px 0;
+      border-radius: 4px;
+    }
+    
+    .google-signin-section {
+      background-color: #f8f9fa;
+      border-left: 4px solid #4285f4;
+      padding: 20px;
       margin: 20px 0;
       border-radius: 4px;
     }
@@ -169,11 +184,34 @@
       <h3>User Provided Information</h3>
       <p>The Application acquires the information you supply when you download and register the Application. Registration with the Service Provider is not mandatory. However, bear in mind that you might not be able to utilize some of the features offered by the Application unless you register with them.</p>
       
+             <div class="google-signin-section">
+         <h3>Google Sign-In Information</h3>
+         <p><strong>When you sign in with Google, we collect:</strong></p>
+         <ul>
+           <li>Your unique Google user identifier (User ID only)</li>
+         </ul>
+         <p>This User ID is used solely to create and maintain your account and enable app features such as habit sharing. We do not collect or store your email address, profile name, or profile picture.</p>
+       </div>
+      
       <p>The Service Provider may also use the information you provided them to contact you from time to time to provide you with important information, required notices and marketing promotions.</p>
       
       <h3>Automatically Collected Information</h3>
       <p>In addition, the Application may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile devices unique device ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browsers you use, and information about the way you use the Application.</p>
     </section>
+    
+         <section class="section">
+       <h2>Google Sign-In Integration</h2>
+       <p>When you choose to sign in with Google, the Application uses Google's authentication services. By signing in with Google, you agree to Google's Privacy Policy and Terms of Service. The information we receive from Google is limited to:</p>
+       <ul>
+         <li>Unique user identifier (User ID only)</li>
+       </ul>
+       <p><strong>We do not store your Google account credentials, email address, profile name, or profile picture.</strong> Authentication is handled securely through Google's servers. Your Google User ID is only used to:</p>
+       <ul>
+         <li>Authenticate your identity</li>
+         <li>Create and maintain your HabitRix account</li>
+         <li>Enable social features like habit sharing</li>
+       </ul>
+     </section>
     
     <section class="section">
       <h2>Does the Application collect precise real time location information of the device?</h2>
@@ -189,7 +227,12 @@
         <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
         <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase Crashlytics</a></li>
         <li><a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat</a></li>
+        <li><a href="https://developers.google.com/identity/sign-in/web/privacy" target="_blank" rel="noopener noreferrer">Google Sign-In</a></li>
       </ul>
+      
+             <div class="highlight">
+         <p><strong>For Google Sign-In specifically:</strong> Your authentication data is processed by Google according to their privacy policy. We only receive your unique User ID and do not access any other personal information.</p>
+       </div>
       
       <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
       <ul>
@@ -202,11 +245,26 @@
     <section class="section">
       <h2>What are my opt-out rights?</h2>
       <p>You can halt all collection of information by the Application easily by uninstalling the Application. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
+      
+             <div class="highlight">
+         <p><strong>For Google Sign-In:</strong> You can disconnect your Google account from the Application at any time by:</p>
+         <ul>
+           <li>Using the "Logout" option in the Application settings</li>
+           <li>Using the "Delete Account" option in the Application settings (permanently removes all your data)</li>
+           <li>Revoking access through your <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener noreferrer">Google Account permissions page</a></li>
+         </ul>
+       </div>
     </section>
     
     <section class="section">
       <h2>Data Retention Policy, Managing Your Information</h2>
-      <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. The Service Provider will retain Automatically Collected information for up to 24 months and thereafter may store it in aggregate. If you'd like the Service Provider to delete User Provided Data that you have provided via the Application, please contact them at <a href="mailto:omar.tamimid1@gmail.com">omar.tamimid1@gmail.com</a> and we will respond in a reasonable time. Please note that some or all of the User Provided Data may be required in order for the Application to function properly.</p>
+      <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. The Service Provider will retain Automatically Collected information for up to 24 months and thereafter may store it in aggregate.</p>
+      
+             <div class="highlight">
+         <p><strong>For Google Sign-In data:</strong> Only your Google User ID is retained as long as your account remains active. If you use the "Delete Account" option in the Application settings, all your data including your User ID is permanently removed from our servers immediately.</p>
+       </div>
+      
+      <p>If you'd like the Service Provider to delete User Provided Data that you have provided via the Application, please contact them at <a href="mailto:omar.tamimid1@gmail.com">omar.tamimid1@gmail.com</a> and we will respond in a reasonable time. Please note that some or all of the User Provided Data may be required in order for the Application to function properly.</p>
     </section>
     
     <section class="section">
@@ -218,7 +276,11 @@
     
     <section class="section">
       <h2>Security</h2>
-      <p>The Service Provider are concerned about safeguarding the confidentiality of your information. The Service Provider provide physical, electronic, and procedural safeguards to protect information we process and maintain. For example, we limit access to this information to authorized employees and contractors who need to know that information in order to operate, develop or improve their Application. Please be aware that, although we endeavor provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.</p>
+      <p>The Service Provider are concerned about safeguarding the confidentiality of your information. The Service Provider provide physical, electronic, and procedural safeguards to protect information we process and maintain. For example, we limit access to this information to authorized employees and contractors who need to know that information in order to operate, develop or improve their Application.</p>
+      
+      <p><strong>Google Sign-In Security:</strong> When you use Google Sign-In, your credentials are handled by Google's secure authentication system. We never store your Google password or have access to your Google account credentials.</p>
+      
+      <p>Please be aware that, although we endeavor provide reasonable security for information we process and maintain, no security system can prevent all potential security breaches.</p>
     </section>
     
     <section class="section">
@@ -229,6 +291,13 @@
     <section class="section">
       <h2>Your Consent</h2>
       <p>By using the Application, you are giving your consent to the Service Provider processing of your information as set forth in this Privacy Policy now and as amended by us. "Processing," means using cookies on a computer/hand held device or using or touching information in any way, including, but not limited to, collecting, storing, deleting, using, combining and disclosing information.</p>
+      
+             <p><strong>By signing in with Google, you consent to:</strong></p>
+       <ul>
+         <li>The collection and processing of your Google User ID as described in this policy</li>
+         <li>The storage of your User ID on our secure servers for account management</li>
+         <li>The use of your User ID to enable social features like habit sharing</li>
+       </ul>
     </section>
     
     <div class="contact">
@@ -241,4 +310,4 @@
     </footer>
   </div>
 </body>
-</html>
+</html> 

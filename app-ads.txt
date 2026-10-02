@@ -1,8 +1,10 @@
-#Last updated Sep 29th 2026
+#Last updated Oct 3rd 2026
 #AdMob
 google.com, pub-5324767510811266, DIRECT, f08c47fec0942fa0
 #PubMatic (AdMob bidding)
 pubmatic.com, 159856, DIRECT, 5d62403b186f2ace
+#Magnite DV+ (AdMob bidding)
+rubiconproject.com, 22884, DIRECT, 0bfd66d529a55807
 #Yandex
 e-planning.net, 2f3a04630ba9ba3f, RESELLER, c1ba615865ed87b2
 pubmatic.com, 165157, RESELLER, 5d62403b186f2ace
